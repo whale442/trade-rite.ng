@@ -1,0 +1,724 @@
+:root {
+    --primary-color: green;
+  }
+ 
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+
+  body {
+    font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    /* display: grid; */
+    place-items: center;
+    min-height: 100vh;
+    background-color:white;
+  }
+  /* Global Stylings */
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: None;
+    border-radius: 0.25rem;
+    background-color:#dff5b8;
+    color:green;
+    font-size:15px;
+  }
+
+
+
+
+   .header {
+    background-color:var(--primary-color);
+  }
+
+
+  .header h5{
+    
+    padding: 8px;
+    height: 25px;
+    width: 300px;
+    left: 787px;
+    top: 128px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+  }
+
+  .logo {
+    width: 200px;
+    Height: 150px;
+    Top: -32px;
+    Left: 31px;
+  }
+
+  /* button */
+  .width-50 {
+    width: 50%;
+  }
+
+
+  .ml-auto {
+    margin-left: auto;
+  }
+
+
+  /* Progressbar */
+
+  .progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 4rem;
+  
+  }
+
+/* text topic */
+  .progress-step{
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+  .progressbar::before,
+  .progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: green;
+    z-index: -1;
+    justify-content: space-around;
+    
+  }
+  
+  .progress {
+    background-color: var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+  }
+  
+  .progress-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #c3f391;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+  
+   .progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+  }
+
+  
+  
+  
+  .progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: red;
+  }
+  
+  .progress-step-active {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .progress-step-active::after{
+    content:attr(data-title);
+    color: green;
+  }
+  /* Form */
+  .form {
+    width: clamp(500px, 60%, 750px);
+    margin: 0 auto;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+  }
+  
+  .form p{
+    text-align: center;
+    font-size: 3.5em;
+  }
+
+  
+  /* hiding form */
+  .form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.3s linear forwards;
+  }
+  
+  .form-step-active {
+    display: block;
+  }
+  
+  .input-group {
+    margin: 2rem 0;
+  }
+  
+  
+
+  /* ANIMATION   / */
+  @keyframes animate {
+    from {
+      transform: scale(1, 0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+
+  
+
+  .btns-group{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 79%;
+
+}
+
+/* Get start btn */
+.get-started {
+  padding: 0.5rem;
+  display: block;
+  text-decoration: none;
+  color:green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
+
+.get-started:hover {
+  background-color:var(--primary-color); 
+  color: white;
+  border-color: none;
+}
+  
+.get-started:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+  }
+.button:hover {
+  background-color:var(--primary-color); 
+  color: white;
+  border-color: none;
+}
+  
+.button:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+  }
+/* end */
+  
+
+.navigator {
+  padding: 0.5rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  text-align: center;
+  /* cursor: pointer; */
+  width: 100%;
+  background-color: #c3f391;
+  border: 1px solid var(--primary-color);
+}
+
+.navigator:hover {
+  background-color:var(--primary-color); 
+  color:#fff;
+  border-color: none;
+}
+  
+  .navigator:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+  }
+
+  .btn {
+    padding: 0.5rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    /* color: #fff; */
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    background-color: #c3f391;
+    border: 1px solid var(--primary-color);
+}
+
+.btn-back {
+  padding: 0.5rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  /* color: #fff; */
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: #c3f391;
+  border: 1px solid var(--primary-color);
+  
+}
+
+
+
+.btn:hover {
+  background-color:var(--primary-color); 
+  color: white;
+  border-color: none;
+}
+  
+  .btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+  }
+
+
+  .form .get-started{
+    padding: 0.5em;
+    width: 150px;
+    margin-left: 265px;
+    margin-top: -79px;
+  }
+ 
+
+  .person_title{
+    width: 90%;
+    background-color:#dff5b8;
+  }
+
+
+  .person_surname{
+    width: 70%;
+    background-color:#dff5b8;
+  }
+
+  .person_firstname, #for_firstname{
+    
+    width: 77%;
+    margin-left: 2px;
+  }
+ 
+
+  .person_othername{
+    width: 103%;
+    background-color:#dff5b8;
+    margin-left: -119px;
+  }
+.other { 
+  margin-left: -118px;
+}
+
+  
+  .person_phonenumber{
+    width: 74%;
+    background-color:#dff5b8;
+  }
+  .phonenumber{
+    margin: -1em;
+    margin-left: 2px;
+    width: 56%;
+  }
+
+  .address{
+    margin-left: 306px;
+    width: 56.5%;
+    margin-top: -67px;
+  }
+
+
+  .companyname{
+    margin: -1em;
+    margin-left: 2px;
+    width: 41%;
+  }
+
+ 
+
+
+  .companyaddress{
+    margin-left:  306px;
+    width: 56.5%;
+    margin-top: -67px;
+  }
+
+  select{
+    padding: 0.75rem;
+    width: 50%;
+    border: 1px solid#dff5b8;
+    border-radius: 0.25rem;
+    background-color:#dff5b8;
+  }
+
+  .typeofmarriage{
+    margin-left: 230px;
+    width: 68%;
+    margin-top: -71px;
+  }
+
+
+  .martialstatus{
+    margin: -1em;
+    margin-left: 2px;
+    width: 60%;
+
+  }
+
+  .meansofidenification{
+    margin-left: 484px;
+    width: 62%;
+    margin-top: -101px;
+  }
+
+  .identificationnumber{
+    margin: -1em;
+    margin-left: 2px;
+    width: 30%;
+    margin-bottom: 39px;
+  }
+  
+  .name {
+    display: block;
+    grid-template-columns: 76px 311px 234px 193px;
+  }
+
+
+  .form-step .input-group input:hover, .form-step  .input-group input::after {
+    background: rgb(149, 241, 149);
+    border: none;
+  }
+  
+
+ 
+  option{
+    border: 1px solid#dff5b8;
+    border-radius: 0.25rem;
+    background-color:#dff5b8;
+  }
+
+  input ::after{
+    background: var(--primary-color);
+    
+  }
+
+.nameofspouse{
+  margin:2em 0;
+  width:49%;
+}  
+
+.nameofaddress{
+  width: 49%;
+    margin-top: 26px;
+    margin-left: 195px;
+
+}
+
+
+.noofdependents{
+  width: 30%;
+  margin-top: -17px;
+}
+
+.namesofdependents{
+  width: 68%;
+    margin-top: -102px;
+    margin-left: 226px;
+}
+
+.form-step h4 {
+  color:var(--primary-color)
+}
+
+/* beneficiary_Table */
+.beneficiary_fullname{
+  width: 49%;
+  margin-top: -8px;
+}
+
+.beneficiary_address {
+  width: 48.5%;
+  margin-top: -101px;
+  margin-left: 361px;
+}
+  
+
+
+
+.beneficiary_phone {
+  width: 32%;
+  margin-top: -15px;
+}
+
+.beneficiary_email {
+  margin-top: -104px;
+  width: 33%;
+  margin-left: 232px;
+  margin-bottom: 31px;
+
+}
+
+.beneficiary_shareValues{
+  width: 32.5 %;
+  margin-left: 472px;
+  margin-top: -98px;
+}
+  
+
+.button_ button_5{
+  color:var(--primary-color);
+  color: blue;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  text-align: center;  
+  display: grid;  
+}
+
+
+ .button_{
+  padding: 0.5rem;
+  display: block;
+  text-decoration: blue;
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  background-color: #c3f391;
+  border: 1px solid var(--primary-color);
+  }
+   
+
+.button_ {
+border: none;
+color: var(--primary-color);
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+} 
+
+
+
+.psa{
+  width: 80%;
+    margin-left: 99px;
+}
+
+.rsa {
+  width: 80%;
+  margin-left: 99px;
+  margin-top: 6.5px;
+}
+
+
+.bankName select{
+  width: 100.5%;
+}
+
+.accountNumber{
+  margin-top: -12px;
+  width: 48%;
+}
+
+.accountBranch{
+  margin-top: -97px;
+    width: 48%;
+    margin-left: 366px;
+    margin-top: -101px;
+}
+
+.container {
+  margin: auto;
+}
+
+
+.container { 
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  color: #666;
+  line-height: 22px;
+  
+  
+  }
+
+  
+
+  .check {
+    display: grid;
+    grid-template-columns: 76px 311px 234px 193px;
+  }
+
+
+
+  .box label {
+    display: block;
+    border: None;
+  }
+
+
+
+
+
+.container-v {
+    float: left;
+    clear: both;
+}
+
+.checkbox .radio {
+display: inline-block;
+/* float: left; */
+width: 25px;
+clear:none
+}
+
+.container-v input {
+  float: left;
+}
+
+.container-v p {
+  width: 22px;
+  float: left;
+  clear: both;
+}
+
+
+.container-v label { 
+  float: left;
+  clear: both;
+}
+
+.container-v .radio{
+  display: inline-block;
+  float: left;
+width: 25px;
+clear:none
+}
+
+.container-v input {
+  float: left;
+}
+
+
+
+/* payment */
+
+
+.table-design {
+  margin-right: 30px;
+  padding: 10px;
+}
+
+
+.payment {
+  width: 100%;
+  margin-top: 50px;
+  background: rgb(226 226 226);
+  /* background-color:red; */
+  height: 291px;
+}
+
+.payment table {
+  align-items: center;
+  margin: auto;
+  width: 60%;
+}
+
+.table-design {
+  margin-right: 30px;
+  padding: 10px;
+}
+
+.pay_button {
+  /* background-color: red; */
+  background: #dff5b8;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 250px;
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 67px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.light-text {
+  color: #575656;
+  margin-top: 50px;
+}
+
+
+.container-v .wrapper {
+  display: grid;
+  grid-template-columns: 30px, 88px;
+}
+
+.container-v .wrapper label {
+  margin-left: -4px;
+  font-size: 17px;
+}
+
+
+
+.container-v .wrapper .checkbox {
+  margin-top: -29px;
+  margin-left: 500px;
+}
+
+
+.container-v .verify {
+  width: 71%;
+  margin-top: -30px;
+  margin-left: 69px;
+}
+
+.container-v .verify input {
+  position: absolute;
+  left: -307px;
+  border: 1px solid blue;
+
+}
+
+#pay{
+  margin-top: 81px;
+}
+
+span{ 
+  color: red;
+}
+
+div{
+  overflow:visible;
+}

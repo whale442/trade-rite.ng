@@ -1,0 +1,61 @@
+{% load static %}
+<header>
+    <div class="brand-logo">
+      <img src="{% static 'img/logo_no-bg.png' %}" alt="brand logo" />
+      <!-- <h2>Logo</h2> -->
+    </div>
+
+    <nav>
+      <ul>
+        <li >
+            {% url 'home' as home %} 
+              
+          <a href="{% url 'home' %}" class="{% if request.path == home %} active {% endif %}">
+            Home
+          </a>
+        </li>
+
+        <li>
+            
+          <a href="#aboutus" class="{% if request.path == aboutus %} active {% endif %}">
+            About us
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Live Market
+          </a>
+        </li>
+
+        <li>
+            {% url 'blog' as blog %}
+          <a href="{% url 'blog' %}" class="{% if request.path == blog %} active {% endif %}"> 
+            Blog
+          </a>
+        </li>
+
+        <li>
+          <a href="{% url 'login' %}"> Login</a>
+        </li>
+        <li>
+          {% if user.is_authenticated %}
+          <a href="{% url 'register' %}"> {{ user.username }}</a>
+
+          {% else %}
+          <a href="{% url 'register' %}"> Get started</a>
+          {% endif %}
+          
+        </li>
+
+      </ul>
+    </nav>
+
+
+  </header>

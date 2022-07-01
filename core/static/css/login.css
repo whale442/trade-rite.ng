@@ -1,0 +1,453 @@
+.mediaViewInfo {
+	--web-view-name: Log In Desktop;
+	--web-view-id: Log_In_Desktop;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Log_In_Desktop;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Log_In_Desktop {
+	position: absolute;
+	width: 1440px;
+	height: 1011px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Log In Desktop;
+	--web-view-id: Log_In_Desktop;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Rectangle_1730 {
+	fill: rgba(247,251,253,1);
+}
+.Rectangle_1730 {
+	position: absolute;
+	overflow: visible;
+	width: 1485px;
+	height: 360px;
+	left: -22px;
+	top: 687px;
+}
+#Menu {
+	opacity: 0.9;
+	left: 609px;
+	top: 83px;
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(45,45,45,1);
+}
+#Menu_q {
+	opacity: 0.9;
+	left: 706px;
+	top: 83px;
+	position: absolute;
+	overflow: visible;
+	width: 90px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(45,45,45,1);
+}
+#Menu_r {
+	opacity: 0.9;
+	left: 1001px;
+	top: 83px;
+	position: absolute;
+	overflow: visible;
+	width: 72px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(45,45,45,1);
+}
+#Menu_s {
+	opacity: 0.9;
+	left: 844px;
+	top: 83px;
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(45,45,45,1);
+}
+#Rectangle_1 {
+	fill: rgba(7,154,109,1);
+}
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 136px;
+	height: 56px;
+	left: 1164px;
+	top: 64px;
+}
+#Menu_u {
+	opacity: 0.9;
+	left: 1211px;
+	top: 81px;
+	position: absolute;
+	overflow: visible;
+	width: 44px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+}
+#Menu_v {
+	opacity: 0.9;
+	left: 138px;
+	top: 73px;
+	position: absolute;
+	overflow: visible;
+	width: 145px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	color: rgba(45,45,45,1);
+}
+#Group_2285 {
+	position: absolute;
+	width: 441px;
+	height: 64px;
+	left: 499px;
+	top: 483px;
+	overflow: visible;
+}
+#Rectangle_1726 {
+	opacity: 0.5;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_1726 {
+	position: absolute;
+	overflow: visible;
+	width: 441px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+#Password {
+	opacity: 0.5;
+	left: 32px;
+	top: 22px;
+	position: absolute;
+	overflow: visible;
+	width: 85px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(45,45,45,1);
+}
+#Group_2284 {
+	position: absolute;
+	width: 441px;
+	height: 64px;
+	left: 499px;
+	top: 393px;
+	overflow: visible;
+}
+#Rectangle_1727 {
+	opacity: 0.5;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_1727 {
+	position: absolute;
+	overflow: visible;
+	width: 441px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+#Email_address {
+	opacity: 0.5;
+	left: 32px;
+	top: 22px;
+	position: absolute;
+	overflow: visible;
+	width: 121px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(45,45,45,1);
+}
+#Group_2282 {
+	position: absolute;
+	width: 441px;
+	height: 64px;
+	left: 499px;
+	top: 659px;
+	overflow: visible;
+}
+#Rectangle_1725 {
+	fill: rgba(7,154,109,1);
+}
+.Rectangle_1725 {
+	position: absolute;
+	overflow: visible;
+	width: 441px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+#Log_In {
+	left: 194px;
+	top: 20px;
+	position: absolute;
+	overflow: visible;
+	width: 54px;
+	white-space: nowrap;
+	line-height: 32px;
+	margin-top: -7px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	color: rgba(255,255,255,1);
+}
+#Group_2283 {
+	position: absolute;
+	width: 172px;
+	height: 24px;
+	left: 768px;
+	top: 579px;
+	overflow: visible;
+}
+#Forgot_Password {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 173px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(7,154,109,1);
+}
+#Group_2281 {
+	position: absolute;
+	width: 441px;
+	height: 64px;
+	left: 499px;
+	top: 755px;
+	overflow: visible;
+}
+#Rectangle_1728 {
+	fill: rgba(243,244,248,1);
+}
+.Rectangle_1728 {
+	position: absolute;
+	overflow: visible;
+	width: 441px;
+	height: 64px;
+	left: 0px;
+	top: 0px;
+}
+#Group_2280 {
+	position: absolute;
+	width: 250.183px;
+	height: 37.368px;
+	left: 95px;
+	top: 13px;
+	overflow: visible;
+}
+#Continue_with_Google {
+	left: 53.183px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 198px;
+	white-space: nowrap;
+	line-height: 32px;
+	margin-top: -7px;
+	text-align: left;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(45,45,45,1);
+}
+#google-g-2015 {
+	position: absolute;
+	width: 37.368px;
+	height: 37.368px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Ellipse_13 {
+	fill: rgba(224,224,224,1);
+}
+.Ellipse_13 {
+	position: absolute;
+	overflow: visible;
+	width: 37.368px;
+	height: 37.368px;
+	left: 0px;
+	top: 0px;
+}
+#Ellipse_14 {
+	fill: rgba(255,255,255,1);
+}
+.Ellipse_14 {
+	position: absolute;
+	overflow: visible;
+	width: 36.8px;
+	height: 36.8px;
+	left: 0.284px;
+	top: 0px;
+}
+#Group_2279 {
+	position: absolute;
+	width: 24.42px;
+	height: 24.988px;
+	left: 6.475px;
+	top: 6.02px;
+	overflow: visible;
+}
+#Group_2273 {
+	position: absolute;
+	width: 24.42px;
+	height: 24.988px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_2274 {
+	position: absolute;
+	width: 24.42px;
+	height: 24.988px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_2276 {
+	position: absolute;
+	width: 24.42px;
+	height: 24.988px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_2275 {
+	position: absolute;
+	width: 24.42px;
+	height: 24.988px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_2278 {
+	position: absolute;
+	width: 24.42px;
+	height: 24.988px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_2277 {
+	position: absolute;
+	width: 24.42px;
+	height: 24.988px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#By_joining_our_marketplace_you {
+	opacity: 0.7;
+	left: 499px;
+	top: 307px;
+	position: absolute;
+	overflow: visible;
+	width: 443px;
+	white-space: nowrap;
+	line-height: 30px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(45,45,45,1);
+}
+#Welcome_Back {
+	left: 499px;
+	top: 236px;
+	position: absolute;
+	overflow: visible;
+	width: 298px;
+	white-space: nowrap;
+	line-height: 73px;
+	margin-top: -16.5px;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(45,45,45,1);
+}
+#Dont_have_an_account_Create_An {
+	left: 516px;
+	top: 867px;
+	position: absolute;
+	overflow: visible;
+	width: 410px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(45,45,45,1);
+}

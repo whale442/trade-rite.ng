@@ -1,0 +1,83 @@
+
+{% load static %}
+
+
+
+{% block extrastyle %}
+  <!-- <link rel="stylesheet" href="{% static 'css/blogs.css' %}"> -->
+{% endblock extrastyle %}
+    
+{% block body %}
+  
+<ul class="card card-primary card-outline" >
+
+  <div class="card-header">
+    <h1 class="card-title m-0">
+      blogs by {{ view.kwargs.username }}  ({{ page_obj.paginator.count }})
+    </h1>
+    <hr>
+  </div>  
+
+  {% for blog in blogs  %}
+  <article>
+    <li>
+      <div class="user">
+        <!-- <img src="{{ blog.profile.image.url }}" alt="user profile"style="border-radius: 50%; width:100px; height:auto;"> -->
+        
+          <p class="card-text">
+            <b><a href="{% url 'user-blogs' blog.author.username %}">{{ blog.author }}</a>
+              </b><br>
+            <small>date bloged: {{ blog.date_posted | date:"F d, Y"}}</small>
+        
+        
+          </p>
+      
+      </div>
+        <div class="card-body">
+          <h1 class="card-title">
+              <a href="{% url 'post-detail' blog.slug %}" class="link">
+                {{ blog.title }}
+              </a>               
+          </h1>
+          
+          <p class="card-text">
+            {{ blog.content }}
+          </p>
+         
+          <hr>
+    </li>
+  </article>
+  {% endfor %}
+
+  <div class="pagination">
+    {% if is_paginated %}
+  {% if page_obj.has_previous %}
+    <a href="?page=1">First</a>
+    <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+  {% endif %}
+  
+  {% for num in page_obj.paginator.page_range %}
+  
+    {% if page_obj.number %}
+      <a href="?page={{ num }}"> {{ num }}</a>
+  
+      {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+  
+          <a href="?page={{ num }}">{{ num }}</a>
+    {% endif %}
+    
+  {% endfor %}
+  
+  {% if page_obj.has_next %}
+    <a href="?page={{ page_obj.next_page_number }}">Next</a>
+    <a href="?page={{ page_obj.paginator.num_pages }}">
+      Last
+    </a>
+  {% endif %}
+  
+  {% endif %}  
+  </div>
+</ul>
+
+
+{% endblock body %}    

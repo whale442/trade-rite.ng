@@ -1,0 +1,144 @@
+#Menu{
+    opacity: 0.9;
+    left: 609px;
+    top: 39px;
+}
+
+
+.Rectangle_1_ {
+    top: 21px;
+}
+
+#Log_In_Desktop {
+    position: absolute;
+    width: 1440px;
+    height: 948px;
+    top: -97px;
+    background-color:transparent;
+}
+
+.form-control {
+    width: 441px;
+    height: 64px;
+    padding: 32px;
+    margin-left: -33px;
+    margin-top: -28px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+
+    /* margin-top: -44px; */
+#password{
+    /* margin-top: -44px; */
+    margin-top: -35px;
+}
+label{
+    position: absolute;
+    margin-top: -62px;
+    margin-left: -32px;
+}
+
+#Group_2284 {
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    left: 499px;
+    top: 420px;
+}
+
+#Group_2285 {
+    position: absolute;
+    width: 441px;
+    height: 64px;
+    left: 499px;
+    top: 547px;
+}
+
+
+
+#Group_2283 {
+    position: absolute;
+    width: 172px;
+    height: 24px;
+    left: 768px;
+    top: 622px;
+    overflow: visible;
+}
+
+#Welcome_Back {
+    left: 499px;
+    top: 234px;
+}
+
+
+button {
+    background-color: transparent;
+    color:white;
+    font-size: 22px;
+    width:441px;
+    height:64px;
+}
+
+
+
+#Rectangle_1725:hover {
+    fill: white;
+    color:black;
+}
+
+#Group_2281 {
+    display: none;
+}
+
+#Rectangle_1725 {
+    fill: #95cf5c;
+}
+
+#Log_In button[type="submit"] span{
+    text-align: center;
+    margin-left: -224px;
+    /* margin-top: 68px; */
+    position: absolute;
+    top: 6px;
+}
+
+#Dont_have_an_account_Create_An {
+    left: 534px;
+    top: 767px;
+}
+a{
+    text-decoration: none;
+}
+
+#Welcome_Back {
+    color: #95cf5c;
+}
+#By_joining_our_marketplace_you{
+    color:darkolivegreen;
+}
+
+#Email_address, #Password{
+    color: red;
+}
+
+
+.form-control {
+    color: green;
+    border: 1px solid green;
+}
+
+#Forgot_Password{
+    color:blue;
+}
+
+
+#Log_In_Desktop {
+    position: absolute;
+    width: 1348px;
+    height: 150vh;
+}
+
+#Rectangle_1725:hover{
+    background-color:red;
+}

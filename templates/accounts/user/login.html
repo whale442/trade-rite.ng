@@ -1,0 +1,128 @@
+{% extends "shared/layout.html" %}
+{% load static %}
+
+{% block staticss %}
+<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="{% static 'css/login.css' %}"/>   
+<link rel="stylesheet" type="text/css" href="{% static 'css/login-edit.css' %}"/> 
+{% endblock staticss %}
+
+{% block content %}
+	
+<div id="Log_In_Desktop">
+	<form action="" method="POST">
+		{% csrf_token %}	
+		<div id="Group_2285">
+			<svg class="Rectangle_1726">
+				<rect id="Rectangle_1726" rx="10" ry="10" x="0" y="0" width="441" height="64">
+				</rect>
+			</svg>
+			<div id="Password">		
+				<label class="form-label">{{ form.password.label }}</label>
+				{{ form.password}}
+			</div>
+		</div>
+		<div id="Group_2284">
+			<svg class="Rectangle_1727">
+				<rect id="Rectangle_1727" rx="10" ry="10" x="0" y="0" width="441" height="64">
+				</rect>
+			</svg>
+			<div id="Email_address">
+				<label class="form-label">{{ form.email.label}}</label>
+				{{ form.email}}
+				<!-- <span>Email address</span> -->
+			</div>
+		</div>
+		<div id="Group_2282">
+			<svg class="Rectangle_1725">
+				<rect id="Rectangle_1725" rx="10" ry="10" x="0" y="0" width="441" height="64">
+				</rect>
+			</svg>
+			<input type="hidden" name="next" value="{{ next }}">
+			<div id="Log_In">
+				<button type="submit" value="Log-in">
+				<span>Log in
+				 </span>
+			
+				
+				</button>
+			</div>
+		</div>
+		<div id="Group_2283">
+			<div id="Forgot_Password">
+				<span>Forgot Password?</span>
+			</div>
+		</div>
+		<div id="Group_2281">
+			<svg class="Rectangle_1728">
+				<rect id="Rectangle_1728" rx="10" ry="10" x="0" y="0" width="441" height="64">
+				</rect>
+			</svg>
+			<div id="Group_2280">
+				<div id="Continue_with_Google">
+					<span>Continue with Google</span>
+				</div>
+				<div id="google-g-2015">
+					<svg class="Ellipse_13">
+						<ellipse id="Ellipse_13" rx="18.684146881103516" ry="18.684146881103516" cx="18.684146881103516" cy="18.684146881103516">
+						</ellipse>
+					</svg>
+					<svg class="Ellipse_14">
+						<ellipse id="Ellipse_14" rx="18.40019416809082" ry="18.40019416809082" cx="18.40019416809082" cy="18.40019416809082">
+						</ellipse>
+					</svg>
+					<div id="Group_2279">
+						<img id="Group_2273" src="{% static 'img/Group_2273.png' %}" srcset="{% static 'img/Group_2273.png 1x' %}, {% static 'img/Group_2273@2x.png 2x' %}">
+							
+						</svg>
+						<img id="{% static 'img/Group_2274.png' %} " src="{% static 'img/Group_2274.png' %}" srcset="{% static 'img/Group_2274.png 1x' %}, {% static 'img/Group_2274@2x.png 2x' %}">
+							
+						</svg>
+						<div id="Group_2276">
+							<img id="{% static 'img/Group_2275.png' %}" src="{% static 'img/Group_2275.png' %}" srcset="{% static 'img/Group_2275.png 1x' %}, {% static 'img/Group_2275@2x.png 2x' %}">
+								
+							</svg>
+						</div>
+						<div id="Group_2278">
+							<img id="img/Group_2277" src="{% static 'img/Group_2277.png' %}" srcset="{% static 'img/Group_2277.png 1x' %}, {% static 'img/Group_2277@2x.png 2x' %}">
+								
+							</svg>
+						</div>
+
+						<div id="Group_2278">
+							<img id="Group_2277" src="Group_2277.png" srcset="Group_2277.png 1x, Group_2277@2x.png 2x">
+								
+							</svg>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="By_joining_our_marketplace_you">
+			<span>By joining our marketplace, you will be able to <br/>sell your digital currencies at the best rates.</span>
+		</div>
+		<div id="Welcome_Back">
+			<span>Welcome Back!</span>
+		</div>
+		<div id="Dont_have_an_account_Create_An">
+			<span>Don't have an account? </span>
+			<a href="{% url 'register' %}">
+				<span style="color:red;">Create An Account</span>
+			</a>
+		</div>
+</div>
+
+
+  
+
+    
+      
+</form>
+
+<!-- <script  type="text/javascript" src="login.js"></script> -->
+{% endblock content %}
+
+{% block script %}
+<script id="applicationScript" type="text/javascript" src="{% static 'js/login.js' %}"></script>
+{% endblock script %}

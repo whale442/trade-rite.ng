@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); */
+*{
+  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+#subscribe-email{
+    position: absolute;
+    top: 81%;
+    left: 29%;
+    display: grid;
+    padding: 30px;
+}
+
+#subscribe-email label{
+    color: #ccc;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+#subscribe-email input {
+    margin-top: 11px;
+    padding: 3px;
+    font-size: 20px;
+    color: #079a6d;
+    background: none;
+    border: none;
+  }
+
+
+  #subscribe-email input:focus{
+      border:none !important;
+  }  
+
+  #text_bg {
+    left: 903px;
+  } 
+
+  form #text_bg button {
+    background: none;
+    color: white;
+    font-size: 20px;
+    
+  }
+
+ #Search_any_coin form input {
+    margin-left: 18px;
+    height: 45px;
+    margin-top: -16px;
+    width: 300%;
+    font-size: 20px;
+    color: #5fea88;
+ }
+
+ #Search_any_coin form button{
+     background: none;
+     background: none;
+    margin-left: -69px;
+    font-size: 20px;
+ }
+
+ a{
+     text-decoration: none;
+
+ }
+
+ body {
+  margin: -51px;
+  margin-left: -95px;
+}
+
+#Image_1 {
+  position: absolute;
+  width: 1256.804px;
+  height: 892.502px;
+  left: 387.563px;
+  top: 137.498px;
+  overflow: visible;
+}
+
+#Path_4180 {
+  opacity: 0.5;
+  fill:rgb(124 191 52);
+}
+
+#Rectangle_305 {
+  opacity: 0.5;
+  fill:rgb(124 191 52);
+}
+
+.Path_4180 {
+  overflow: visible;
+  position: absolute;
+  width: 2182.253px;
+  height: 1318.917px;
+  left: -276.127px;
+  top: 1637.28px;
+  transform: matrix(1,0,0,1,0,0);
+}
+
+
+#Menu_bm #logo-no-bg{
+  margin-left: -34%;
+  width: 204%;
+  margin-top: -113px;
+}
+
+#Ellipse_7 {
+
+  opacity: 0.5;
+  background: rgb(124 191 52);
+}
+
+#Rectangle_305 {
+  opacity: 0.5;
+  fill: rgb(124 191 52);
+}
+
+.a-link{
+  color:red;
+}
+.a-link:hover{
+  opacity: 0.5;
+  background-color:rgb(124 191 52);
+  color:white;
+  padding:10px;
+  border-radius:3px;
+  /* position: absolute; */
+  width: 136px;
+  height: 56px;
+  /* left: 1164px;
+  top: 64px; */
+}
+
+
+.a-link:link{
+  opacity: 0.5;
+  background-color:rgb(124 191 52);
+}
+
+.login{
+  color:white;
+}
+
+.menu-bg{
+  color:red;
+}
+
+#bg {
+  opacity: 0.5;
+  fill: #7cbf34;
+  /* color: white; */
+}
+
+#Rectangle_287 {
+  opacity: 0.5;
+  fill: #7cbf34;
+}
+
+#Rectangle_296 ,#Rectangle_299, #Rectangle_301 {
+  opacity: 0.5;
+  fill: #7cbf34;
+} 
+
+
+
+
+header .container {
+  margin-top: -7%;
+}
+
+header .container img{
+  width: 22%;
+  /* height: 302px; */
+  margin-top: -34px;
+  margin-left: 134px
+}
+@media screen and (max-width: 600px){
+
+}
+
+.board-head{
+  
+    top: 34%;
+    position: absolute;
+    top: -4%;
+    left: 19px;
+}
+
+.Ellipse_7 {
+  position: absolute;
+  overflow: visible;
+  width: 733px;
+  height: 733px;
+  left: 760px;
+  top: 66px;
+}
+
+nav{
+  height: 184px;
+}
+
+#Image_1 {
+  position: absolute;
+  width: 1256.804px;
+  height: 892.502px;
+  left: 387.563px;
+  top: -37.502px;
+}
+
+
+
+
+#Crypto_update__platform_that__ {
+    left: 140px;
+    top: 319px;
+    position: absolute;
+    overflow: visible;
+    width: 460px;
+    white-space: nowrap;
+    line-height: 73px;
+    margin-top: -13.5px;
+
+}
+
+#Menu, #Menu_, #Menu_ba,#Menu_bb,#Menu_bc {  
+  top: 37px;
+}
+
+.Rectangle_1_ {
+  top: 26px;
+}
+
+#Group_2225 {
+  position: absolute;
+  width: 1160px;
+  height: 869.669px;
+  left: 188px;
+}
+
+#Group_2244 {
+  position: absolute;
+  width: 315px;
+  height: 474px;
+  left: 190px;
+  top: 6365px;
+
+}
+
+#Group_2243 {
+  opacity: 0.43;
+  position: absolute;
+  width: 812.809px;
+  height: 478.379px;
+  left: 505.593px;
+  top: 6397px;
+}
+
+.dev-logo img {
+  width: 98%;
+  position: absolute;
+  top: 171px;
+  left: 39px;
+}
+
+#brand-logo{
+  width: 20%;
+  position: absolute;
+  top: 92.251%;
+  left: 127px;
+}
+
+#Group_2249 {
+  position: absolute;
+  width: 240px;
+  height: 141px;
+  left: 140px;
+  top: 7125px;
+  overflow: visible;
+  margin-top: -2px;
+}
+
+
+#Heading {
+  opacity: 0.9;
+  left: 529px;
+  top: 5994px;
+  position: absolute;
+  overflow: visible;
+  width: 550px;
+}
+
+
+
+
+
+#Group_2249 {
+  position: absolute;
+  width: 247px;
+  height: 141px;
+  left: 181px;
+  top: 7306px;
+  overflow: visible;
+  margin-top: -133px;
+}
+
+
+
+.dev-logo img {
+    width: 98%;
+    position: absolute;
+    top: 234px;
+    left: 2px;
+}
+
+#Group_2248 {
+  position: absolute;
+  width: 362.997px;
+  height: 51.341px;
+  left: 539px;
+  top: 7087px;
+  overflow: visible;
+}
+
+.follow-us{
+  position: absolute;
+  margin-top: 46px;
+  color: #95c169;
+}
+
+#Coming_Soon {
+  left: 653px;
+  top: 7027px;
+}
+
+
+
+#copyright_text {
+    opacity: 0.9;
+    left: 551px;
+    top: 7597px;
+}

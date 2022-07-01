@@ -1,0 +1,155 @@
+{% extends "shared/layout.html" %}
+{% load static %}
+
+<!-- STATIC CSS FILES  -->
+{% block staticss %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'css/_styles.css' %}">
+<link rel="stylesheet" href="{% static 'css/accounts.css' %}"/>
+{% endblock staticss %}
+  
+  
+
+  
+
+{% block content %} 
+
+  <form action="{% url 'register' %}" class="form"  method="POST">
+    {% csrf_token %}
+    <!-- Progress bar -->
+    <div class="progressbar">
+      <div class="progress" id="progress"></div>
+
+      <div class="progress-step progress-step-active"data-title="Getting Started"></div>
+      <div class="progress-step" data-title="Personal Information"></div>
+      <div class="progress-step" data-title="Choose a Username"></div>
+      <div class="progress-step" data-title="Password"></div>
+      <!-- <div class="progress-step" data-title="Confirmation & Checkout"></div> -->
+     
+      
+      <div class="progress" id="progress"></div>
+    </div>
+
+    {% include "partials/_alerts.html" %}
+     
+    <!-- Steps -->
+    
+      <!-- FIRST STEP END   / -->
+      <div class="form-step form-step-active">
+        <div class="input-group ">
+          <p>
+            <span style="color: #4ed824">Get Started</span>
+            <span style="color:#72d877;"><br>in minutes</span> <br>
+            <br>
+  
+          </p>
+          
+  
+        </div>
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto get-started">Get started</a>
+        </div>
+      </div>
+
+    <!-- FIRST STEP END   / -->
+
+
+    <div class="form-step">
+
+      <div class="name">
+       <!-- SECOND STEP   -->
+     
+        <div class="input-group">
+         
+        </div>
+        <div class="input-group">
+            <label for="">Name *</label>
+            
+             {{ form.name }}
+        </div> 
+
+        <div class="input-group">
+          <label for="" id="for_firstname">Email*</label>
+         
+          {{ form.email }}
+        </div>
+
+        
+    
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Previous</a>
+          <a href="#" class="btn btn-next">Next</a>
+        </div>
+    </div>
+
+    
+
+  </div>  
+
+     <!-- SECOND STEP END   -->  
+
+     <!-- THIRD STEP / -->
+     <div class="container">
+    <div class="form-step">
+     
+      <div class="input-group nameofaddress">
+        <label for="address">Username*</label>
+        
+        {{ form.username }}
+      </div>
+      
+      <div class="btns-group">
+        <a href="#" class="btn btn-prev">Previous</a>
+        <a href="#" class="btn btn-next">Next</a>
+      </div>
+   
+ </div>
+      
+      
+    </div>
+   
+<br>
+    <!-- THIRD STEP END / -->
+
+    <!-- FOURTH STEP / -->
+    <div class="container">
+    <div class="form-step">
+      <div class="input-group psa">
+        <label for="password">Password*</label>
+        {{ form.password }}
+      </div>
+      <div class="input-group rsa">
+        <label for="">Repeat Password *</label>
+        
+        {{ form.password2 }}  
+      </div>
+     
+      <div class="btns-group">
+        <a href="#" class="btn btn-prev">Previous</a>
+       <input type="submit" value="submit">
+      </div>
+      
+    </div>
+
+      
+    </div>
+  <br>
+
+        
+    </div>
+      
+    
+  </form>
+</div>
+
+{% endblock content %}
+
+{% block script %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="{% static 'js/forms.js' %}"></script>
+ {% endblock script %}
+
+
+
+
+

@@ -4,7 +4,7 @@ from decouple import config
 # from pathlib import Path
 # import django
 # from urllib import request
-import django_on_heroku
+# import django_on_heroku
 # import dj_database_url
 # import boto3
 
@@ -189,13 +189,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Django in-built notifications /
-from django.contrib.messages import constants as messages
-MESSAGE_TAGS ={
-    messages.ERROR:'danger'
-}
+# # from django.contrib.messages import constants as messages
+# MESSAGE_TAGS ={
+#     messages.ERROR:'danger'
+# }
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'login'
 
 
-django_on_heroku.settings(locals())
+# django_on_heroku.settings(locals())
